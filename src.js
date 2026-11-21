@@ -24,11 +24,14 @@ function config() {
   }
 }
 
+
 function client() {
-  const c = config();
-  if (!c.url || !c.key) return null;
-  return createClient(c.url, c.key);
+  return createClient(
+    'https://rrvhklpqvwcakfnsqzfw.supabase.co',
+    'sb_publishable_9ONRGH7p8QmZg6RYhk3EfA_8p_A5FXF'
+  );
 }
+
 
 function layout(content) {
   root.innerHTML = `
